@@ -1,0 +1,6 @@
+Yay! It's working!
+
+name:           Michael Mumo
+home:           Nairobi, Kenya
+favorite snack: Vanilla milkshake
+least favorite: papaya     

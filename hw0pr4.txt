@@ -1,0 +1,27 @@
+# 
+# Hashtag lines are optional comments
+#
+
+# if in state 0
+
+0 xE** -> N 0 # "corridor rule"
+0 *x** -> E 1 # "intersection rule"
+0 NE** -> X 2 # "dead end rule"
+
+# if in state 1
+
+1 *X*S -> E 1
+1 ***X -> S 3
+1 *E*S -> X 0 
+
+# if in state 2
+
+2 N*X* -> W 2
+2 X*** -> N 0
+2 N*W* -> X 3 
+
+# if in state 3
+
+3 **WX -> S 3
+3 **X* -> W 2
+3 **WS -> X 1 
