@@ -1,0 +1,8 @@
+"So theory isn’t dead, yet, but it is changing – perhaps beyond recognition."
+TRUE
+
+Psychologist Tom Griffiths used neural nets to help him on existing theories. Critics
+point out that neural nets can throw up spurious correlatins when the training datasets
+are small or biased. Scientists including Isaac Newton had to have an underlying hypothesis
+to have the ability to ignore some data. Human intuition proves to be vital in shaping hypothesis,
+but AI is useful in refining the theories as with Griffiths.

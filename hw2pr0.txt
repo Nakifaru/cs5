@@ -1,0 +1,8 @@
+For you, how much of a difference is there between growing - or evolving - software versus designing - or writing - software?   
+In what ways does the grow/design distinction change your opinions about the software - or not?
+
+Growing changes the aspect from creating a certain intended behaviour, to having unpredictable behaviour. 
+This switches the role of computer scientists such as the researchers at Anthropic to studying software 
+as opposed to making software. From the studies it shows that we are still developing methods to find
+where hallucinations come from. I initially found it hard to term Computer Science as a science, however
+the evolving of sofware is forcing me to reconsider my thoughts.
