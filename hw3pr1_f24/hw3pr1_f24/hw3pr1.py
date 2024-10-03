@@ -280,11 +280,31 @@ def overlay(filename1, filename2):
 
 # Sound function to write #5:  echo
 
+def echo(filename, time_delay):
+    """echo plays an audio file with an overlay of itself with a time delay
+       Argument: filename1, the name of the original file
+                 time_delay, the time in seconds of the delay between the overlay of the sound
+       Result: no return value, but
+               this creates the sound file 'out.wav'
+               and plays it
+    """
+    print("Playing the sound...")
+    play(filename)
 
+    samps, sr = readwav(filename)
 
+    print("The first 10 sound-pressure of sample are\n", samps[:10])
+    print("The number of samples per second for sample is", sr)
 
+    samps1 = samps + [0]*int(time_delay * sr) 
+    samps2 = [0]*int(time_delay * sr) + samps
+ 
+    newsamps = add_scale_2(samps1, samps2, 1, 1)
+    newsr = sr
 
-
+    write_wav([newsamps, newsr], "out.wav") # write data to out.wav
+    print("\nPlaying new sound...")
+    play('out.wav')   # play the new file, 'out.wav'
 
 
 # Helper function for generating pure tones

@@ -1,0 +1,9 @@
+In my opinion, the most preventable contributing factor to the bug was 
+leaving the function running for the first 40 seconds of flight. If this
+was made to go off immediately after launch, the rocket would never achieve
+higher speeds that the function was not build to anticipate and hence it 
+would also not require changes with more advancements leading to higher speeds of rockets.
+Truly, software does not fail in the same system as a mechanical system. We can not point
+to a specific part and site it as the issue. Software is dependent on each other. Failure is
+of the whole system as it is built on itself not external parts. This is why testing is a key part of 
+software engineering.
