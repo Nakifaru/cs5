@@ -1,0 +1,12 @@
+# hw6pr1b.hmmm will become a random-number generator  
+#
+# Name(s): 
+
+# Lab task #2: Expand this to become your random-number generator:
+#   (Note: this is starter code that correctly handles the inputs...)
+
+00 read r1    # input a
+01 read r2    # input c
+02 read r3    # input m
+03 read r4    # input X_0
+04 read r5    # input N 

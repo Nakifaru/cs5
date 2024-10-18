@@ -1,0 +1,7 @@
+# exJump.hmmm
+
+00 setn r1 42    # set r1 = 42
+01 write r1      # output r1
+02 addn r1 1     # r1 += 1
+03 jumpn 04       # jump to instruction number 1 (line 01)
+04 halt          # stop!  

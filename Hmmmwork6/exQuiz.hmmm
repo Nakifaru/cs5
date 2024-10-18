@@ -1,0 +1,10 @@
+# exQuiz.hmmm
+
+00 read r1          # get # from user to r1
+01 setn r2 7        # set r2 to 7
+02 mod r4 r1 r2     # r4 = r1 + r2
+03 div r3 r1 r4     # r3 = r1 // r4
+04 sub r3 r3 r2     # r3 = r3 - r2
+05 addn r3 -1       # r3 += -1
+06 write r3         # output r3
+07 halt             # stop 

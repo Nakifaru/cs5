@@ -1,0 +1,14 @@
+# Example0 is an example program that 
+#   00: asks the user for one input, r1
+#   01: computes r2 = r1*r1  (squares it)
+#   02: computes r2 = r2 + r1 (adds the original)
+#   03: writes out r2, then        04: halts 
+
+00 read r0          # get number from user to r1
+01 jumpn 0
+02 calln r0, 0
+03 write r2         # print what's in r2
+04 halt             # stop  
+
+
+
