@@ -1,0 +1,9 @@
+In The Education of a Computer, Hopper lists two drawbacks of "using subroutines,"
+that is, of abstracting computation into reusable functions. 
+Do you feel those two drawbacks still exist today? How important are they today?
+
+Hopper points to time lost in performing duplicate data transfer. With modern
+computation power, this time has been reduced to negligible. She further points 
+to the small number of subroutines available. Modern programming languages are
+well structured with compilers to abstract virtually all functions. There are further
+numerous libraries that can be imported with lots of functions.

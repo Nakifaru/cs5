@@ -3,17 +3,22 @@
 #   2) counts up from that input
 #   3) keeps going and going...
 #
-# Name(s):
+# Name(s): Michael Mumo
 #
 
 # Lab task #1a: Change the above code to "the cubic countdown"
 # See the lab description for details
 
-00 read r1          # get number from user to r1
-01 write r1         # print the value of r1
-02 addn r1 1        # add 1 to r1
-03 jumpn 01         # jump to line 01
-04 halt             # never halts! [use ctrl-c]
+00 read r1          # get number from user to be cubed
+01 read r5          # get number to which printing will cut off
+02 mul r2 r1 r1     # square r1 user input and store in r2
+03 mul r2 r2 r1     # multiply the square in r2 with the input in r1 to get the cube
+04 write r2         # print the first value of r2
+05 addn r2 -1       # reduce the value in r2 by 1
+06 write r2         # print the value of r2
+07 sub r6 r2 r5     # check the difference of our cut off number and the current value in r2
+08 jgtzn r6 05      # jump to line 03 if the difference is more than 0
+09 halt             # never halts! [use ctrl-c]
 
 # Lab task #1a: Change the above code to "the cubic countdown"
 # See the lab description for details 

@@ -1,11 +1,14 @@
 # hw6 problem 2
 #
-# Name(s): 
+# Name(s): Michael Mumo
 #
 
-# This is a placeholder whose code you'll replace:
-00 read r1          # get number from user to r1
-01 read r2          # ditto, for r2
-02 mul r3 r1 r2     # r3 = r1 * r2
-03 write r3         # print what's in r3
-04 halt             # stop. 
+00 read   r1         # Get number from user into r1
+01 read   r2         # Get power from user into r2
+02 setn   r3 1       # Put our result into r3
+03 jeqzn  r2 07      # Jump to line 7 if power r2 is 0
+04 mul    r3 r3 r1   # Make r3 be r1 input multiplied by existing result r3
+05 addn   r2 -1      # Decrement r2 by 1
+06 jumpn  03         # Jump back to line 3
+07 write  r3         # Write out the result, r3
+08 halt

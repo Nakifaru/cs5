@@ -1,13 +1,24 @@
 # hw6 problem 3  
 #
-# Name(s): 
+# Name(s): Michael Mumo
 #
 # Hmmm...
 #
 
-# This is a placeholder whose code you'll replace:
-00 read r1          # get number from user to r1
-01 read r2          # ditto, for r2
-02 mul r3 r1 r2     # r3 = r1 * r2
-03 write r3         # print what's in r3
-04 halt             # stop. 
+00 read r1          # get number of fibonacci nums from user to r1
+01 addn r1 -2       # reduces r1 by 2 since the first 2 numbers are known to be 1
+02 setn r2 1        # Set r2 to 1, the first value
+03 setn r3 1        # Set r3 to 1, the second value
+04 write r2         # Print out 1 in r2
+05 write r3         # Print out 1 in r3
+06 jeqzn r1 13      # Jump to the end if r1, nums to print is zero
+07 add r4 r3 r2     # Assign the next value to r4
+08 addn r1 -1       # Decrement r1 the number of values to be printed
+09 write r4         # Print r4 the current fibonacci value
+10 copy r2 r3       # Assign the grandparent value r2 to the parent value r3
+11 copy r3 r4       # Assign the parent value r3 to the current value r4
+12 jumpn 6          # Jump to line 6
+13 halt
+
+
+
