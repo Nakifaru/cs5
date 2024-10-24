@@ -1,16 +1,27 @@
 # hw6 pr4 "recursive power"
 #
-# Name(s): 
+# Name(s): Michael Mumo
 #
 # Hmmm...
-#
-# This is a placeholder - you'll replace this code...
-#   gold:  see the hw6pr4 description for starter code (power)
-#  black:  see the hw6pr4 description for more (the "towers" challenge)
-#
 
-00 read r1          # get number from user to r1
-01 read r2          # ditto, for r2
-02 mul r3 r1 r2     # r3 = r1 * r2
-03 write r3         # print what's in r3
-04 halt             # stop. 
+00 read  r2             # Read user input into r1
+01 setn  r15 42         # Initialize the stack pointer
+02 read  r1             # Read user input for power into r2
+03 calln r14 7          # Call the factorial function (at line 7)
+04 nop                  # Space for expansion (or printing)
+05 write r13            # Write result to the screen
+06 halt                 # All done!
+07 jnezn r1  11         # The base-case test: is the input r1 != 0?
+08 setn  r13 1          # r1 must be 0, so the return value, r13, is 1
+09 nop                  # Room for expansion (or printing!)
+10 jumpr r14            # Return the result, r13, to the line # in r14
+11 pushr r1  r15        # Save (push) r1 to the stack (at location r15)
+12 pushr r14 r15        # Save (push) r14 to the stack 
+13 addn  r1 -1          # Find N-1 and put it into r1
+14 nop                  # Room for expansion (or printing)
+15 calln r14 7          # Then, ask for factorial of N-1  (Wow!)
+16 nop                  # Room for expansion (or printing)
+17 popr  r14 r15        # Recover (pop) r14 from the stack
+18 popr  r1  r15        # Recover (pop) r1 from the stack
+19 mul   r13 r2 r13     # Calculate r13 = N * fac(N-1)   (Wow!)
+20 jumpr r14            # All done! return r13 to the caller at r14

@@ -1,0 +1,7 @@
+Since each qubits represents 2 states at once, the general formula
+for number to be represented by N qubits is 2**N. Thus 100 qubits
+represent 1.267*10**30 and 280 qubits represent 1.943*10**84. 
+Marissa Giustina, Google quantum electronics engineer:
+Quantum computation is about building and controlling a “programmable molecule,” then using it to simulate and ask questions of nature.
+I really like this at it explains the importance of harnesing quantum computing:
+to model the universe more accurately and get a better understanding.
