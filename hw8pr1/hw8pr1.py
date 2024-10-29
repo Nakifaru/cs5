@@ -152,7 +152,7 @@ def mset():
     for col in range(width):
         x = scale( col, width, XMIN, XMAX)
         for row in range(height):
-            y = scale( row, height, YMIN, 1.0)
+            y = scale( row, height, YMIN, YMAX)
             c = x + y*1j
             n = NUM_ITERATIONS
             if inMSet(c, n):
