@@ -1,0 +1,8 @@
+As stated, the introduction of computers to learning chess did not deter human players but made them better.
+This can be seen in other sectors such as art where artists can now make better digital art rather than being replaced
+and education where students still need teachers despite having AI. 
+
+Likewise our aesthetic intution as humans can limit us as we are unable to see deeper patterns. This can be thought of 
+in automated cars vs humans, where humans reactions in accidents might be to simply turning away from a danger without much 
+thought of where they are headed to which might cause a worse accident, as compared to automated cars that can analyze a lot
+of data around it and make the best decision.
