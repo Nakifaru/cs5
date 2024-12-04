@@ -1,0 +1,3 @@
+So far, the simulation runs and prints well on the terminal with the ability to make moves following the
+random generated rules. The print out has been very helpful in decoding. Now I'd like to work on mutation before
+getting into making the simulation look better and explore mazes too.

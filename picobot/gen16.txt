@@ -1,0 +1,50 @@
+0 NExx -> S 2 
+0 NxWx -> S 1 
+0 Nxxx -> S 4 
+0 xExS -> N 1 
+0 xExx -> S 2 
+0 xxWS -> N 4 
+0 xxWx -> S 4 
+0 xxxS -> N 2 
+0 xxxx -> N 2 
+
+1 NExx -> S 0 
+1 NxWx -> E 0 
+1 Nxxx -> W 0 
+1 xExS -> W 4 
+1 xExx -> W 1 
+1 xxWS -> N 1 
+1 xxWx -> E 0 
+1 xxxS -> E 2 
+1 xxxx -> E 2 
+
+2 NExx -> S 4 
+2 NxWx -> E 4 
+2 Nxxx -> S 3 
+2 xExS -> W 0 
+2 xExx -> N 4 
+2 xxWS -> E 3 
+2 xxWx -> N 1 
+2 xxxS -> N 2 
+2 xxxx -> N 2 
+
+3 NExx -> W 2 
+3 NxWx -> E 2 
+3 Nxxx -> W 0 
+3 xExS -> N 4 
+3 xExx -> W 2 
+3 xxWS -> N 0 
+3 xxWx -> S 4 
+3 xxxS -> E 3 
+3 xxxx -> W 4 
+
+4 NExx -> W 0 
+4 NxWx -> E 3 
+4 Nxxx -> E 2 
+4 xExS -> N 3 
+4 xExx -> N 4 
+4 xxWS -> N 3 
+4 xxWx -> S 3 
+4 xxxS -> W 2 
+4 xxxx -> S 4 
+

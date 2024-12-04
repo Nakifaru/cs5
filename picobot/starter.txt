@@ -1,0 +1,5 @@
+Name: Michael Mumo (individual project)
+
+Project description: We are the creators of an empty 2 dimensional world 25 by 25 spaces. In this world we place picobot,
+a creature whose mandate is to travel through all the spaces in the world. Through a simulation of evolution, picobot gets 
+better and better at covering spaces till we pick the best code of life for picobot.

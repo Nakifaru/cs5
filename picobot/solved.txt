@@ -1,0 +1,31 @@
+Picobot empty room:
+0 x*** -> N 0   # nothing N? Go N. (stay in state 0)
+0 N*X* -> W 1   # wall to N? Go W. (change to state 1)
+0 N*W* -> E 2   # At top left corner? Go E (state 2)
+
+# if in state 1
+
+1 ***x -> S 1   # nothing S? Go S. (stay in state 1)
+1 **XS -> W 0
+1 **WS -> X 0   # wall to S? Go W.(change to state 0)
+
+# if in state 2
+
+2 *X** -> E 2   # no wall to E? Go E. (state 2)
+2 *E** -> X 1   # top right corner? No mover. (state 1)
+
+
+6 step challenge for empty room:
+0 *X** -> E 0
+0 *E** -> X 1 
+
+1 x*** -> N 1  
+1 N*X* -> X 2   
+
+2 ***x -> S 2   
+2 **XS -> W 1
+
+
+
+
+Picobot maze:
